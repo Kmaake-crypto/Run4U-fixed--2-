@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUN4U | Personal Shopping & Errands Service Johannesburg</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        ⚡ Fast Personal Runner Service from Johannesburg | Delivery within <span>3 to 5 Working Days</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo-container">
+            <div class="logo-badge">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <div class="logo-text">RUN4U</div>
+        </a>
+        <a href="https://wa.me/27610274287" target="_blank" class="nav-btn">
+            <i class="fa-brands fa-whatsapp"></i> Order Now
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Need Items From <span>Johannesburg?</span> We Run 4 U!</h1>
+            <p>Send us a photo of any outfit, traditional attire, or item you want to order. Tshepiso will source and deliver it straight to you!</p>
+            <div class="hero-cta">
+                <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20would%20like%20to%20place%20an%20order%20for%20an%20item!" target="_blank" class="btn-main">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Order (061 027 4287)
+                </a>
+                <a href="#how-it-works" class="btn-outline">How It Works</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <div class="hero-img-box">
+                <img src="founder-1.jpg" alt="Tshepiso - RUN4U Founder" class="img-default">
+                <img src="founder-2.jpg" alt="Tshepiso - RUN4U Founder" class="img-hover">
+            </div>
+            <div class="badge-runner">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Fixed Runner Fee<br><strong style="font-size:1.4rem;">R100</strong></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Order Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2 class="section-title">How To Order From JHB</h2>
+        <p class="section-subtitle">Simple, reliable, and convenient shopping in 3 easy steps</p>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h3>Send Picture & Details</h3>
+                <p>Contact us on WhatsApp with a photo of the item you want. Include your <strong>Name, Surname, and Location</strong>.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h3>50% Deposit + Runner Fee</h3>
+                <p>Pay a 50% deposit of the product price plus our fixed <strong>R100 Runner Fee</strong> to secure your order.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h3>Weekly Pickup & Delivery</h3>
+                <p>Orders are collected during the week. Sit back and relax while your package arrives within <strong>3 to 5 working days</strong>.</p>
+            </div>
+        </div>
+
+        <div class="fee-banner">
+            <div>
+                <h3>Standard Runner Fee</h3>
+                <p>Flat rate service fee for sourcing and handling</p>
+            </div>
+            <div class="fee-tag">R100</div>
+        </div>
+    </section>
+
+    <!-- Order Cost Estimator Calculator -->
+    <section class="calculator-section">
+        <h2 class="section-title" style="text-align: center;">Order Cost Calculator</h2>
+        <p class="section-subtitle" style="text-align: center;">Estimate your required deposit to get started</p>
+        
+        <div class="calc-box">
+            <div class="input-group">
+                <label for="itemPrice">Product Price (ZAR):</label>
+                <input type="number" id="itemPrice" placeholder="e.g. 250">
+            </div>
+            
+            <div class="calc-result">
+                <div>
+                    <span>50% Deposit:</span>
+                    <span id="depositVal">R0.00</span>
+                </div>
+                <div>
+                    <span>Runner Fee:</span>
+                    <span>R100.00</span>
+                </div>
+                <div class="total">
+                    <span>Upfront Total to Pay:</span>
+                    <span id="totalVal">R100.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase / Product Showcase Section -->
+    <section class="showcase" id="gallery">
+        <h2 class="section-title" style="text-align: center;">Available Designs & Styles</h2>
+        <p class="section-subtitle" style="text-align: center;">Popular items sourced through RUN4U</p>
+
+        <div class="filter-tags">
+            <button class="tag-btn active" data-filter="all">All Items</button>
+            <button class="tag-btn" data-filter="traditional">Traditional Attire</button>
+            <button class="tag-btn" data-filter="dresses">Dresses & Pinafores</button>
+            <button class="tag-btn" data-filter="perfumes">Perfumes</button>
+            <button class="tag-btn" data-filter="beachwear">Beachwear</button>
+            <button class="tag-btn" data-filter="haircare">Hair & Beauty</button>
+            <button class="tag-btn" data-filter="sleepwear">Sleepwear</button>
+        </div>
+
+        <div class="gallery-grid">
+            
+            <!-- Item 1 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-pinafore-doek.jpg" alt="Pinafore with Doek" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Pinafores with Doek</div>
+                        <div class="product-price">From R90</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Pinafores%20with%20Doek%20(From%20R90)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="product-card" data-category="traditional">
+                <div class="product-img-wrap">
+                    <img src="product-sepedi-traditional.jpg" alt="Sepedi Traditional Attire" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Sepedi Traditional Attire</div>
+                        <div class="product-price">R250</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Sepedi%20Traditional%20Attire%20(R250)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-oneshoulder-gown.jpg" alt="One-Shoulder Ruffle Dress" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">One-Shoulder Ruffle Gown (M-4XL)</div>
+                        <div class="product-price">Code: B31971</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20One-Shoulder%20Ruffle%20Gown%20(Code:%20B31971)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-ankara-flare.jpg" alt="Ankara High-Neck Flare Dress" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Ankara High-Neck Flare Dress</div>
+                        <div class="product-price">Code: MQ-3287 (M-4XL)</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Ankara%20High-Neck%20Flare%20Dress%20(Code:%20MQ-3287)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-tiered-dress.jpg" alt="Vibrant African Print Tiered Dress" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Vibrant Print Tiered Dress</div>
+                        <div class="product-price">Code: C836 (L-5XL)</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Vibrant%20Print%20Tiered%20Dress%20(Code:%20C836)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="product-card" data-category="traditional">
+                <div class="product-img-wrap">
+                    <img src="product-blue-traditional.jpg" alt="Blue Shweshwe Style Dress" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Blue Patterned Flare Dress & Headband</div>
+                        <div class="product-price">Custom Order</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Blue%20Patterned%20Flare%20Dress" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="product-card" data-category="traditional">
+                <div class="product-img-wrap">
+                    <img src="product-beaded-gown.jpg" alt="Xhosa Inspired Traditional Gown" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Traditional Beaded Style Gown</div>
+                        <div class="product-price">Sizes: M-4XL</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Traditional%20Beaded%20Style%20Gown" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="product-card" data-category="traditional">
+                <div class="product-img-wrap">
+                    <img src="product-corset-gown.jpg" alt="Corset Tiered Traditional Ballgown" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Corset Tiered Traditional Gown</div>
+                        <div class="product-price">Code: MQ-3854 (M-4XL)</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Corset%20Tiered%20Gown%20(Code:%20MQ-3854)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="product-card" data-category="traditional">
+                <div class="product-img-wrap">
+                    <img src="product-blanket-traditional.jpg" alt="Traditional Attire with Shweshwe Blanket" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Traditional Attire with Blanket</div>
+                        <div class="product-price">Custom Order</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Traditional%20Attire%20with%20Blanket" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="product-card" data-category="perfumes">
+                <div class="product-img-wrap">
+                    <img src="product-perfume-set1.jpg" alt="Designer Inspired Perfume Collection" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Designer Inspired Perfume Collection</div>
+                        <div class="product-price">100ml Range</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20from%20the%20Perfume%20Collection" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="product-card" data-category="perfumes">
+                <div class="product-img-wrap">
+                    <img src="product-perfume-set2.jpg" alt="Now, Yara, Marshmallow Blush & Maya Perfumes" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Yara, Maya & Blush Perfume Range</div>
+                        <div class="product-price">From R150</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20from%20the%20Yara%2FMaya%20Perfume%20Range" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="product-card" data-category="perfumes">
+                <div class="product-img-wrap">
+                    <img src="product-perfume-set3.jpg" alt="Eclaire, Berrys, Black Asad & Khamrah 60ml Perfumes" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Eclaire & Black Asad 60ml Range</div>
+                        <div class="product-price">60ml Bottles</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20from%20the%2060ml%20Perfume%20Range" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="product-card" data-category="beachwear">
+                <div class="product-img-wrap">
+                    <img src="product-mesh-coverup.jpg" alt="Fishnet Beach Cover-Up SW-165" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Fishnet Beach Cover-Up</div>
+                        <div class="product-price">Code: SW-165 (S-2XL)</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Fishnet%20Beach%20Cover-Up%20(Code:%20SW-165)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 14 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-bubble-dress.jpg" alt="Bubble Hem Mini Dress Q-22897M" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Bubble Hem Mini Dress</div>
+                        <div class="product-price">Code: Q-22897M (XS-XL)</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Bubble%20Hem%20Mini%20Dress%20(Code:%20Q-22897M)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 15 -->
+            <div class="product-card" data-category="haircare">
+                <div class="product-img-wrap">
+                    <img src="product-hair-styling-set.jpg" alt="Hair Straightening Comb & Blow Dryer Set" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Styling Comb & Blow Dryer Set</div>
+                        <div class="product-price">Combo Deal</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Styling%20Comb%20%26%20Blow%20Dryer%20Set" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 16 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-halter-gown.jpg" alt="Halter Neck Jacquard Gown Q-22970A" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Halter Neck Jacquard Gown</div>
+                        <div class="product-price">Code: Q-22970A (S-2XL)</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Halter%20Neck%20Jacquard%20Gown%20(Code:%20Q-22970A)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 17 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-fringe-dress.jpg" alt="Ruched Fringe Maxi Dress Q-22244B" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Ruched Fringe Maxi Dress</div>
+                        <div class="product-price">Code: Q-22244B (S-2XL)</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Ruched%20Fringe%20Maxi%20Dress%20(Code:%20Q-22244B)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 18 -->
+            <div class="product-card" data-category="traditional">
+                <div class="product-img-wrap">
+                    <img src="product-heritage-green-gown.jpg" alt="Off-Shoulder Heritage Print Ballgown" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Off-Shoulder Heritage Print Ballgown</div>
+                        <div class="product-price">Code: C951 (M-4XL) &mdash; R220</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Off-Shoulder%20Heritage%20Print%20Ballgown%20(Code:%20C951)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 19 -->
+            <div class="product-card" data-category="dresses">
+                <div class="product-img-wrap">
+                    <img src="product-polo-skater-dress.jpg" alt="Ribbed Polo Neck Skater Dress" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Ribbed Polo Neck Skater Dress</div>
+                        <div class="product-price">Code: YB0079 (S-XXL) &mdash; R150</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Ribbed%20Polo%20Neck%20Skater%20Dress%20(Code:%20YB0079)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 20 -->
+            <div class="product-card" data-category="traditional">
+                <div class="product-img-wrap">
+                    <img src="product-red-tiered-traditional.jpg" alt="Red Tiered Traditional Skirt Set with Doek" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">Red Tiered Traditional Skirt Set</div>
+                        <div class="product-price">Code: C978 (L-5XL) &mdash; R240</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%20Red%20Tiered%20Traditional%20Skirt%20Set%20(Code:%20C978)" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 21 -->
+            <div class="product-card" data-category="sleepwear">
+                <div class="product-img-wrap">
+                    <img src="product-pj-set.jpg" alt="2-Piece Pajama Set" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <div class="product-title">2-Piece Pajama Set</div>
+                        <div class="product-price">R80</div>
+                    </div>
+                    <a href="https://wa.me/27610274287?text=Hi%20Tshepiso,%20I%20want%20to%20order%20the%202-Piece%20Pajama%20Set" class="order-item-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order This Item
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/27610274287" target="_blank" class="whatsapp-float" title="Chat with Tshepiso">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <h2>RUN4U</h2>
+            <p>Your Trusted Personal Shopping & Delivery Runner in Johannesburg</p>
+            <div class="footer-contact">
+                <i class="fa-solid fa-phone"></i> 061 027 4287
+            </div>
+            <p style="font-size: 0.85rem; color: #888;">© 2026 RUN4U. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
