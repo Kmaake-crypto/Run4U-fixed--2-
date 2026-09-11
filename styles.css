@@ -519,6 +519,156 @@ nav {
     padding-top: 10px;
 }
 
+/* --- Nav Policy Link --- */
+.nav-link-policy {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-left: auto;
+    margin-right: 22px;
+    transition: color 0.25s ease;
+}
+.nav-link-policy:hover { color: var(--primary-red); }
+
+/* --- Policy Section --- */
+.policy-section {
+    padding: 70px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.policy-wrap {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.policy-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.policy-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    background: white;
+    border: 1px solid rgba(230, 57, 86, 0.1);
+    border-radius: var(--border-radius);
+    padding: 20px 22px;
+    transition: 0.3s;
+}
+
+.policy-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.policy-num {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary-red);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(230, 57, 86, 0.3);
+}
+
+.policy-list h4 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.policy-list p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+}
+
+.policy-payment-card {
+    background: var(--primary-red);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 32px 28px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 100px;
+}
+
+.policy-payment-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.95rem;
+}
+
+.payment-row:last-of-type { border-bottom: none; }
+
+.payment-row span { opacity: 0.85; }
+
+.copy-value {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-align: right;
+}
+.copy-value:hover { text-decoration: underline; }
+.copy-value i { font-size: 0.85rem; }
+
+.policy-pop-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 22px;
+    background: white;
+    color: var(--primary-red);
+    box-shadow: none;
+}
+.policy-pop-btn:hover {
+    background: var(--bg-light);
+    color: var(--primary-dark-red);
+}
+
+.copy-toast-run4u {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--text-dark);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2500;
+}
+.copy-toast-run4u.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
 /* --- Footer --- */
 footer {
     background: var(--text-dark);
@@ -608,6 +758,15 @@ footer {
     }
     .calculator-section {
         padding: 50px 5%;
+    }
+    .policy-section {
+        padding: 60px 5%;
+    }
+    .policy-wrap {
+        grid-template-columns: 1fr;
+    }
+    .policy-payment-card {
+        position: static;
     }
     footer {
         padding: 40px 5%;
@@ -782,6 +941,27 @@ footer {
     .calculator-section {
         padding: 35px 5%;
         margin: 30px auto;
+    }
+
+    .policy-section {
+        padding: 40px 5%;
+    }
+    .policy-list li {
+        padding: 16px 18px;
+        gap: 14px;
+    }
+    .policy-num {
+        flex: 0 0 38px;
+        width: 38px;
+        height: 38px;
+        font-size: 0.95rem;
+    }
+    .policy-payment-card {
+        padding: 26px 20px;
+    }
+    .nav-link-policy {
+        margin-right: 12px;
+        font-size: 0.85rem;
     }
 
     footer {
