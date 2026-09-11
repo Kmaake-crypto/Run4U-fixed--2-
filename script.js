@@ -42,6 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- 3. Policy: Copy Payment Details ---
+    const copyToast = document.getElementById('copyToastRun4u');
+    document.querySelectorAll('.copy-value').forEach((el) => {
+        el.addEventListener('click', () => {
+            const value = el.getAttribute('data-copy');
+            if (navigator.clipboard && value) {
+                navigator.clipboard.writeText(value).then(() => {
+                    copyToast?.classList.add('show');
+                    setTimeout(() => copyToast?.classList.remove('show'), 1800);
+                }).catch(() => {});
+            }
+        });
+    });
+
 });
-
-
